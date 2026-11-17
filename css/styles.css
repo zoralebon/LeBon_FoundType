@@ -1,0 +1,210 @@
+.body {
+    background-size: cover;
+}
+
+/* Header */
+.header {
+    background-color: skyblue;
+    text-align: center;
+    padding: 25px 30px 20px;
+}
+
+/* Main title */
+.h1 {
+    font-family: Georgia, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0 auto 30px;
+}
+
+/* Introduction paragraph */
+.intro {
+    max-width: 1250px;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 1.65;
+    text-align: center;
+}
+
+/* Main content */
+.main {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+}
+
+/* Gallery heading */
+.h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    text-align: center;
+    margin: 35px 0 30px;
+}
+
+/* Required Flexbox gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Row layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Column layout */
+.column {
+    flex: 0 0 250px;
+    padding: 0;
+}
+
+/* Required gallery item width */
+.gallery-item {
+    width: 250px;
+    background-color: white;
+    text-align: center;
+}
+
+/* Clickable image links */
+.gallery-item a {
+    display: block;
+}
+
+/* Required image styling */
+.gallery-item img {
+    width: 100%;
+    display: block;
+    height: 250px;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Captions */
+.caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #222;
+    text-align: center;
+    margin: 0;
+    padding: 12px 5px;
+    line-height: 1.4;
+}
+
+/* Hover effect */
+.gallery-item img:hover {
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* PHONE LAYOUT */
+@media screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        width: 100%;
+        height: auto;
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .text-box {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 25px;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 1.3;
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+
+    .intro {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 5px 20px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 26px;
+        text-align: center;
+        margin: 25px auto;
+    }
+
+    /* Stack images vertically */
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .column {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .gallery-item {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+        display: block;
+    }
+
+    .caption {
+        font-size: 16px;
+        text-align: center;
+        padding: 12px 5px;
+    }
+
+    footer {
+        width: 100%;
+        padding: 20px 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+}
